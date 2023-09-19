@@ -21,7 +21,7 @@ function clickHandle(){
     <Box className="MobileMenu-Item" sx={{width:"100%"}}>
         {isClick ? (<CancelIcon onClick={clickHandle} className='MobileMenu-icon' sx={{fontSize:40}}/>):(<ListIcon onClick={clickHandle} className='MobileMenu-icon' sx={{fontSize:40}}/>)}
         <Box className={isClick ? "active" : "inactive"}>
-            <a href='/'>
+            <a href='#Home'>
                 <HomeRoundedIcon sx={{fontSize:30}}/>
             </a>
 
@@ -29,7 +29,7 @@ function clickHandle(){
                 <PersonIcon sx={{fontSize:30}}/>
             </a>
 
-            <a href='/'>
+            <a href='#Home'>
                 <SettingsIcon sx={{fontSize:30}}/>
             </a>
 
@@ -43,7 +43,7 @@ function clickHandle(){
                 <BusinessCenterIcon sx={{fontSize:30}}/>
             </a>
 
-            <a href='/'>
+            <a href='#contact'>
                 <PermContactCalendarIcon sx={{fontSize:30}}/>
             </a>
         </Box>

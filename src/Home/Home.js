@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import title_slider from '../compnents/Slider';
-function Home() {
+function Home(props) {
 const [count,setCount]=useState(0);
 useEffect(()=>{
   const counter= setInterval(()=>{
@@ -35,18 +35,18 @@ useEffect(()=>{
                     I'm Md Soliman
                 </Typography>
 
-                <Typography variant='h3' sx={{fontFamily:"montserrat",color:"#fff",textAlign:"center",fontWeight:"900",marginTop:4,textShadow:"8px 8px 14px var(--Button)"}} className='title'>
+                <Typography variant={props.smdevice ?"h5" :"h3"} sx={{fontFamily:"montserrat",color:"#fff",textAlign:"center",fontWeight:"900",marginTop:4,textShadow:"8px 8px 14px var(--Button)"}} className='title'>
                    A &nbsp;  {title_slider[count]}
                     
                 </Typography>
                 <Box sx={{display:"flex",fontSize:"1.2rem",flexWrap:"wrap",textAlign:"center",marginTop:4,justifyContent:"center"}}>
-                    <a href="/" >
+                    <a href="https://github.com/mdsoliman64" >
                         <GitHubIcon sx={{ fontSize: 40 }}/>
                     </a>
-                    <a href="/" >
+                    <a href="https://linkedin.com/in/md-soliman" >
                         <LinkedInIcon sx={{ fontSize: 40 }}/>
                     </a>
-                    <a href="/" >
+                    <a href="https://www.instagram.com/mdsoliman64/" >
                         <InstagramIcon sx={{ fontSize: 40 }}/>
                     </a>
 

@@ -9,7 +9,7 @@ import CricketImage from  "../Assets/Images/cricket.png"
 function Hobby() {
   return (
     <section className='Hobby' id="Hobby">
-    <Paper elevation={4} className='Hobby-item' sx={{backgroundColor:"#FCF0FF",color:"#fff",margin:"auto",marginTop:10,paddingBottom:5,width:"80%"}}>
+    <Paper elevation={4} className='Hobby-item' sx={{backgroundColor:"#FCF0FF",color:"#fff",margin:"auto",marginTop:10,paddingBottom:5,width:"100%"}}>
           
          <Box sx={{backgroundColor:"var(--Button)",borderRadius:"0 0 25px 25px",padding:5,textAlign:"center"}}>
          <Typography variant='h2' sx={{fontFamily:"Montserrat",fontWeight:"600"}}>

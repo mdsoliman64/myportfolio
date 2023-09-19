@@ -26,7 +26,7 @@ function Service() {
                      <FontAwesomeIcon icon={faFigma} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
           
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
              
                          Figma To HTML
                 </Typography>
@@ -45,7 +45,7 @@ function Service() {
                      <FontAwesomeIcon icon={ faHtml5} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
                 
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
                 PSD To HTML
                 </Typography>
                 <Typography variant='p'>
@@ -61,7 +61,7 @@ function Service() {
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faMobileScreen} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
                 Fully Responsive Design
                 </Typography>
                 <Typography variant='p'>
@@ -78,7 +78,7 @@ function Service() {
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faWordpress} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center",textAlign:"center"}}>
                 Wordpress Theme Customization
                 </Typography>
                 <Typography variant='p'>
@@ -96,7 +96,7 @@ function Service() {
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faLaptopCode} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
                 Website Customization
                 </Typography>
                 <Typography variant='p'>
@@ -114,7 +114,7 @@ function Service() {
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faSearchengin} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
                 Search Engine optimization
                 </Typography>
                 <Typography variant='p'>

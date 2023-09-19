@@ -43,8 +43,8 @@ return()=>{
   },[windowSize,ref])
   return (
     <Grid container spacing={0} sx={{position:"relative"}}>
-      <Grid item xs={10} sx={{position:"relative"}}>
-        <Home />
+      <Grid item xs={smdevice ? 12:10} sx={{position:"relative",padding:5}}>
+        <Home smdevice={smdevice}/>
         <About />
         <Hobby/>
         <Service />
@@ -53,7 +53,7 @@ return()=>{
         <Contact/>
        
       </Grid>
-      <Grid item xs={2} sx={{position:"fixed",textAlign:"right",marginLeft:"82%",zIndex:10}} >
+      <Grid item xs={smdevice ?0 :2} sx={{position:"fixed",textAlign:"right",marginLeft:"82%",zIndex:10}} >
        {smdevice ? (<MobileMenue />) :(<Navbar/>)}
         
       </Grid>
