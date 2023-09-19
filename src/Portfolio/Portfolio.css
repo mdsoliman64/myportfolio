@@ -1,0 +1,73 @@
+#Portfolio{
+margin-Top:20%;
+margin-bottom: 20%;
+padding-top: 50px;
+transition: 2s ease-in-out;
+}
+
+.Portfolio-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    flex-grow: 1;
+    transition: 2s ease-in-out;
+
+}
+
+.Portfolio-title{
+    background-color: #5A0E70;
+    color: #fff;
+    padding:80px;
+    width:10px;
+}
+.Portfolio-title-mb{
+    background-color: #5A0E70;
+    color: #fff;
+    padding:20px;
+    width:100%;
+
+}
+.Portfolio-title-mb  h1{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    letter-spacing: 3px;
+    padding: 5px;
+    text-align: center;
+      
+}
+.Portfolio-title h1{
+    font-family: "Montserrat";
+    transform-origin:1.5em 3em ;
+   
+    transform: rotate(-90deg);
+    font-size: 3rem;
+    letter-spacing: 3px;
+    padding: 25px;
+      
+}
+.Portfolio-item a{
+    color:var(--Button);
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: "Syne";
+
+}
+.Portfolio-item {
+    overflow-X:hidden ;
+    overflow-y: auto;
+    padding: 50px;
+    background-color: aliceblue;
+    max-height: 340px;
+
+}
+.Portfolio-wrap ::-webkit-scrollbar{
+
+    background: #979790; 
+    border-radius: 25px;
+   
+}
+.Portfolio-wrap ::-webkit-scrollbar-thumb{
+    background: var(--Button); 
+    border-radius: 25px;
+}

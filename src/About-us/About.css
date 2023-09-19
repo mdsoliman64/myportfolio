@@ -1,0 +1,19 @@
+.About{
+    margin: auto;
+   
+    padding: 40px;
+    margin-bottom: 40px;
+    transition: 2s ease-in-out;
+   
+  
+    
+}
+.About-item{
+    width: 80%;
+    margin: auto;
+    background-color: var(--Button);
+    color: #fff;
+    padding: 50px;
+    min-height: 250px;
+    transition: 2s ease-in-out;
+}
