@@ -30,7 +30,7 @@ transition: 2s ease-in-out;
 }
 .Portfolio-title-mb  h1{
     font-family: "Montserrat";
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 3px;
     padding: 5px;
     text-align: center;
@@ -60,6 +60,20 @@ transition: 2s ease-in-out;
     background-color: aliceblue;
     max-height: 340px;
 
+}
+.Portfolio-item-mb{
+    overflow-X:hidden ;
+    overflow-y: auto;
+    padding: 50px;
+    background-color: aliceblue;
+    max-height: 340px;
+}
+
+.Portfolio-item-mb a{
+    color:var(--Button);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Syne";
 }
 .Portfolio-wrap ::-webkit-scrollbar{
 

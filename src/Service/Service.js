@@ -8,20 +8,20 @@ import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
-function Service() {
+function Service(props) {
 
   return (
    <section id="service">
    <Grid container spacing={1} className="service-item">
     <Grid item sm={12} sx={{marginBottom:5}}>
-    <Paper sx={{width:"50%",padding:2,border:"2px solid var(--Button)",borderRadius:"25px"}}>     
+    <Paper sx={props.smdevice ?{width:"100%",padding:2,border:"2px solid var(--Button)",borderRadius:"25px"}:{width:"50%",padding:2,border:"2px solid var(--Button)",borderRadius:"25px"}}>     
                 <Typography variant='h5'>
                     What I do for my client
                 </Typography>
         </Paper>
     </Grid>
     <Grid item sm={12} md={4}>
-            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"70%"}}>
+            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faFigma} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
@@ -30,7 +30,7 @@ function Service() {
              
                          Figma To HTML
                 </Typography>
-                <Typography variant='p'>
+                <Typography variant='p' sx={{textAlign:"justify"}}>
              "Transforming your creative vision into stunning reality, I possess the remarkable ability to seamlessly convert your Figma designs into captivating HTML masterpieces with pixel-perfect precision and a keen eye for detail. "
              </Typography>
             </Paper>
@@ -40,7 +40,7 @@ function Service() {
 
 
     <Grid item sm={12} md={4}>
-            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"70%"}}>
+            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={ faHtml5} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
@@ -57,7 +57,7 @@ function Service() {
 
 
     <Grid item sm={12} md={4}>
-            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"70%"}}>
+            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faMobileScreen} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
@@ -74,11 +74,11 @@ function Service() {
 
 
     <Grid item sm={12} md={4}>
-            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"70%"}}>
+            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faWordpress} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
-                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center",textAlign:"center"}}>
+                <Typography variant='h5' sx={{color:"var(--Button)",marginBottom:2,fontFamily:"Montserrat",fontWeight:"700",textAlign:"center"}}>
                 Wordpress Theme Customization
                 </Typography>
                 <Typography variant='p'>
@@ -91,7 +91,7 @@ function Service() {
 
 
     <Grid item sm={12} md={4}>
-            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"70%"}}>
+            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
                
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faLaptopCode} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
@@ -109,7 +109,7 @@ function Service() {
 
 
     <Grid item sm={12} md={4}>
-            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"70%"}}>
+            <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
               
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faSearchengin} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 

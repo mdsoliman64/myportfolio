@@ -46,8 +46,8 @@ return()=>{
       <Grid item xs={smdevice ? 12:10} sx={{position:"relative",padding:5}}>
         <Home smdevice={smdevice}/>
         <About smdevice={smdevice} />
-        <Hobby/>
-        <Service />
+        <Hobby smdevice={smdevice}/>
+        <Service  smdevice={smdevice} />
         <Portfolio />
         <Upwork />
         <Contact/>
