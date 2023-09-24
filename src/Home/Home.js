@@ -7,20 +7,22 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import title_slider from '../compnents/Slider';
 function Home(props) {
-const [count,setCount]=useState(0);
-useEffect(()=>{
-  const counter= setInterval(()=>{
-        if(count < title_slider.length){
-        setCount((prev)=> {return prev+=1});
-        }else{
-            setCount(0)
-        }
-        },3000);
+    const [count,setCount]=useState(0);
+    useEffect(()=>{
+      const counter= setInterval(()=>{
+            if(count < title_slider.length){
+            setCount((prev)=> {return prev+=1});
+            }else{
+                setCount(0)
+            }
+            },3000);
+    
+            return(()=>{
+                clearInterval(counter)
+            });
 
-        return(()=>{
-            clearInterval(counter)
-        })
-},[count])
+
+    },[count])
 
   return (
    <section className='Home' id="Home">

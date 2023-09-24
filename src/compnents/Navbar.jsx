@@ -34,7 +34,7 @@ function Navbar() {
 
          <a href="#service">
           <div className="icon">
-            <RocketLaunchIcon className="rocket-icon" sx={{fontSize:30}}/>
+            <RocketLaunchIcon className="rocket-icon" sx={{fontSize:35}}/>
           </div>
          </a>
 

@@ -20,7 +20,7 @@ function Contact() {
             <a href="mailto:seo.mdsoliman@gmail.com">
             <Box sx={{display:"flex",flexWrap:"wrap"}}>
             
-                <FontAwesomeIcon icon={faEnvelope} style={{fontSize:"2rem",marginRight:5}} />
+                <FontAwesomeIcon icon={faEnvelope} style={{fontSize:"1.7rem",marginRight:5}} />
                 <Typography variant='h6' sx={{color:"#f0f8ff"}}>
                 seo.mdsoliman@gmail.com   
                 </Typography>

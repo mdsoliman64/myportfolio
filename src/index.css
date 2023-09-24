@@ -9,7 +9,8 @@ body{
   /* background-image:linear-gradient(180deg,#0F1637,#270F1E ); */
   background-image: url("/src/Assets/Images/bg.png");
   background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
+
 
   background-repeat: no-repeat;
 }
