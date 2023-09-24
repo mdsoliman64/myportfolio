@@ -35,7 +35,7 @@ useEffect(()=>{
                     I'm Md Soliman
                 </Typography>
 
-                <Typography variant={props.smdevice ?"h5" :"h3"} sx={{fontFamily:"montserrat",color:"#fff",textAlign:"center",fontWeight:"900",marginTop:4,textShadow:"8px 8px 14px var(--Button)"}} className='title'>
+                <Typography variant={props.smdevice ?"h5" :"h3"} sx={{fontFamily:"montserrat",color:"#C8C8C8",textAlign:"center",fontWeight:"900",marginTop:4,textShadow:"8px 8px 14px var(--Button)"}} className='title'>
                    A &nbsp;  {title_slider[count]}
                     
                 </Typography>

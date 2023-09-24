@@ -10,6 +10,7 @@
     width: 80%;
     height: auto;
     text-align: center;
+    
   
 }
 .Home a{
@@ -26,6 +27,7 @@
 .Home button:hover{
     background-color: #fff;
     color:var(--Button);
+   
 }
 .title{
     animation: zoom 5s ease-in-out infinite;

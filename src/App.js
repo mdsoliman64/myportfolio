@@ -10,6 +10,7 @@ import Service from './Service/Service';
 import Portfolio from './Portfolio/Portfolio';
 import Upwork from './Upwork/Upwork';
 import Contact from './contact/Contact';
+import Features from './Feaures/Features';
 function App() {
   
   const [smdevice,setSmdevice]=useState(false);
@@ -49,6 +50,7 @@ return()=>{
         <Hobby smdevice={smdevice}/>
         <Service  smdevice={smdevice} />
         <Portfolio />
+        <Features/>
         <Upwork />
         <Contact/>
        
