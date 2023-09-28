@@ -15,7 +15,10 @@
         title: "Calculator (React)",
         path:"https://mdsoliman64.github.io/calculator/"
     },
-   
+   {
+    title:"Code Editor (simple react app)",
+    path:"https://l9svl2.csb.app/"
+   }
 ];
 
 export default Post;
