@@ -85,3 +85,10 @@ transition: 2s ease-in-out;
     background: var(--Button); 
     border-radius: 25px;
 }
+.carousel-wrapper{
+    background-color: #5A0E70;
+    width: 100%;
+}
+.carousel-wrapper h2{
+    color: #5A0E70;
+}

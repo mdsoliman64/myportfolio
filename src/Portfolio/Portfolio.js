@@ -12,7 +12,9 @@ setMbDevice(true)
   }else{
 setMbDevice(false);
   }
-  },[windowSize])
+  },[windowSize]);
+
+  
   return (
    <section id="Portfolio">
       <div className='Portfolio-wrap'>
