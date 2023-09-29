@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.efd7f144.css",
-    "main.js": "/myportfolio/static/js/main.d7f47008.js",
+    "main.css": "/myportfolio/static/css/main.e96a2ae6.css",
+    "main.js": "/myportfolio/static/js/main.5b09770e.js",
     "static/media/bg.png": "/myportfolio/static/media/bg.7d7cf32f14421b1b703b.png",
     "static/media/calculator.PNG": "/myportfolio/static/media/calculator.925b629e2beb1db61dc3.PNG",
     "static/media/grammer-guru.PNG": "/myportfolio/static/media/grammer-guru.3fbd148d3284e2ed352a.PNG",
@@ -9,11 +9,11 @@
     "static/media/learn-eng-cuecard.PNG": "/myportfolio/static/media/learn-eng-cuecard.cbdfd93786bcdf9b72bb.PNG",
     "static/media/code-editor.PNG": "/myportfolio/static/media/code-editor.9a2b70e025a63e0dab97.PNG",
     "index.html": "/myportfolio/index.html",
-    "main.efd7f144.css.map": "/myportfolio/static/css/main.efd7f144.css.map",
-    "main.d7f47008.js.map": "/myportfolio/static/js/main.d7f47008.js.map"
+    "main.e96a2ae6.css.map": "/myportfolio/static/css/main.e96a2ae6.css.map",
+    "main.5b09770e.js.map": "/myportfolio/static/js/main.5b09770e.js.map"
   },
   "entrypoints": [
-    "static/css/main.efd7f144.css",
-    "static/js/main.d7f47008.js"
+    "static/css/main.e96a2ae6.css",
+    "static/js/main.5b09770e.js"
   ]
 }
