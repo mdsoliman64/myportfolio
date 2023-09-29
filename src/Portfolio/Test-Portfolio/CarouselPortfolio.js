@@ -19,7 +19,7 @@ function prevHandle(){
 }
     return(
         <>
-            <section id="CarouselPortfolio" style={{transform:`translateX(-${mbdevice ? imageIndex * 700 : imageIndex * 120}%)`,}}>
+            <section id="CarouselPortfolio" style={{transform:`translateX(-${mbdevice ? imageIndex * 130 : imageIndex * 120}%)`,}}>
                     {Products.map((item,index)=>{
                         return(
                             <div className="CP-card" key={index}>
@@ -37,7 +37,7 @@ function prevHandle(){
                             <div className="CP-body">
                                 <p> {item.des}</p>
                             </div>
-                            <button href={item.link}>Visit</button>
+                            <button><a href={item.link}>Visit</a></button>
                             </div>
                         )
                     })}
