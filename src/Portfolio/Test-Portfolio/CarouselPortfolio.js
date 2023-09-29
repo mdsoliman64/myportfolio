@@ -19,7 +19,7 @@ function prevHandle(){
 }
     return(
         <>
-            <section id="CarouselPortfolio" style={{transform:`translateX(-${mbdevice ? imageIndex * 130 : imageIndex * 120}%)`,}}>
+            <section id="CarouselPortfolio" style={{transform:`translateX(-${mbdevice ? imageIndex * 151 : imageIndex * 80}%)`,}}>
                     {Products.map((item,index)=>{
                         return(
                             <div className="CP-card" key={index}>

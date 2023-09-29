@@ -63,10 +63,10 @@ width: 77%;
 }
 .Portfolio-item-mb{
     overflow:hidden ;
-    padding: 30px;
+    padding: 15px;
     background-color: aliceblue;
     height: auto;
-    width: 70%;
+    width: 100%;
 }
 
 .Portfolio-item-mb a{

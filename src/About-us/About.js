@@ -5,7 +5,7 @@ function About(props) {
   return (
     <section className='About' id="About">
     <Paper elevation={4} className='About-item' sx={{backgroundColor:"var(--Button)",color:"#fff",marginTop:10,border:"2px solid var(--Border)",boxShadow:"inset 4px 4px 4px #000"}}>
-            <Typography variant='h2'sx={{fontFamily:"Montserrat",fontWeight:"600"}}>
+            <Typography variant={`${props.smdevice?"h5":"h2"}`} sx={{fontFamily:"Montserrat",fontWeight:`${props.smdevice?"600":"300"}`}}>
                    About
             </Typography>
             <Box sx={{marginTop:2,textAlign:"justify"}}>

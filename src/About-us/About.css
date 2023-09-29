@@ -1,7 +1,7 @@
 .About{
     margin: auto;
    
-    padding: 40px;
+    padding: 10px;
     margin-bottom: 40px;
     transition: 2s ease-in-out;
     text-align: center;
@@ -10,11 +10,11 @@
     
 }
 .About-item{
-    width: 80%;
+    width: 90%;
     margin: auto;
     background-color: var(--Button);
     color: #fff;
-    padding: 50px;
+    padding: 20px;
     min-height: 250px;
     transition: 2s ease-in-out;
     text-align: center;
