@@ -1,0 +1,51 @@
+#CarouselPortfolio{
+    display: flex;
+    transition: 1s ease-in-out;
+    width:20%;
+ 
+}
+.CP-card{
+    width:300px;
+    background-color: var(--Button);
+    margin:auto 20px;
+    font-family: "Montserrat";
+    text-align: center;
+    color:#fff;
+    transition: 1s ease-in-out;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+.CP-card img{
+width: 300px;
+height: auto;
+
+}
+.CP-head, .CP-body{
+    padding:5px;
+}
+.CP-head button{
+    background-color: #cb6ce6;
+    border-radius: 25px;
+    color:#5a0e70;
+}
+.CP-button-container{
+ 
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+.CP-button-container button{
+    margin: auto;
+    font-size: 1.2rem;
+    background-color: var(--Button);
+    color:#fff;
+    cursor: pointer;
+    
+}
+.CP-button-container button:first-child{
+    border-radius: 12px 0px 0px 12px ;
+}
+.CP-button-container button:last-child{
+    border-radius: 0px 12px 12px 0px;
+}

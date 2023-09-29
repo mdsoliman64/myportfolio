@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import "./Portfolio.css"
 
-import Post from '../Assets/service-post/Post';
+import CarouselPortfolio from './Test-Portfolio/CarouselPortfolio';
 
 function Portfolio() {
   const [mbdevice,setMbDevice]=useState(false);
@@ -22,13 +22,8 @@ setMbDevice(false);
          <h1>Portfolio</h1>
         </div>
         <div className={mbdevice ?'Portfolio-item-mb':"Portfolio-item"}>
-            <ul>
-                {Post.map((item,index)=>{
-                   return(
-                    <a href={item.path} key={index}> <li> {item.title}</li></a>
-                   )
-                })}
-            </ul>
+          
+            <CarouselPortfolio mbdevice={mbdevice}/>
         </div>
       </div>
    </section>
