@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Service.css"
+import { useInView } from 'react-intersection-observer';
 import {Grid,Paper,Typography,Box} from "@mui/material";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
@@ -9,7 +10,7 @@ import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
 function Service(props) {
-
+        const [ref, inView] = useInView();
   return (
    <section id="service">
    <Grid container spacing={1} className="service-item">
@@ -20,9 +21,9 @@ function Service(props) {
                 </Typography>
         </Paper>
     </Grid>
-    <Grid item sm={12} md={4}>
+    <Grid item sm={12} md={4} sx={{transition:"all 1s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
-            <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
+            <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}  >
                      <FontAwesomeIcon icon={faFigma} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
             </Box>
           
@@ -39,7 +40,7 @@ function Service(props) {
 
 
 
-    <Grid item sm={12} md={4}>
+    <Grid item sm={12} md={4} sx={{transition:"all 2s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={ faHtml5} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
@@ -56,7 +57,7 @@ function Service(props) {
     </Grid>
 
 
-    <Grid item sm={12} md={4}>
+    <Grid item sm={12} md={4} sx={{transition:"all 3s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faMobileScreen} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
@@ -73,7 +74,7 @@ function Service(props) {
 
 
 
-    <Grid item sm={12} md={4}>
+    <Grid item sm={12} md={4} sx={{transition:"all 1.5s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
                      <FontAwesomeIcon icon={faWordpress} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 
@@ -90,7 +91,7 @@ function Service(props) {
 
 
 
-    <Grid item sm={12} md={4}>
+    <Grid item sm={12} md={4} sx={{transition:"all 2.5s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
                
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>
@@ -108,7 +109,7 @@ function Service(props) {
 
 
 
-    <Grid item sm={12} md={4}>
+    <Grid item sm={12} md={4} sx={{transition:"all 2.8s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
               
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}>

@@ -5,13 +5,15 @@ import CodeImage from "../Assets/Images/code.png"
 import CyclingImage from "../Assets/Images/cycling.png"
 import TravelImage from "../Assets/Images/travel.png"
 import CricketImage from  "../Assets/Images/cricket.png"
+import { useInView } from 'react-intersection-observer';
 
 function Hobby(props) {
+  const [ref, inView] = useInView();
   return (
-    <section className='Hobby' id="Hobby">
+    <section className='Hobby' id="Hobby" ref={ref} style={{transition:"all 2s ease-out",transitionDelay:"0.6s",opacity:`${inView ? 1:0}`,transform:`skewX(${inView ? "0deg" : "20deg"})` }} >
     <Paper elevation={4} className='Hobby-item' sx={{backgroundColor:"#FCF0FF",color:"#fff",margin:"auto",marginTop:10,paddingBottom:5,width:"100%"}}>
           
-         <Box sx={{backgroundColor:"var(--Button)",borderRadius:"0 0 25px 25px",padding:8,textAlign:"center"}}>
+         <Box sx={{transition:"3s",backgroundColor:"var(--Button)",borderRadius:"0 0 25px 25px",padding:8,textAlign:"center",opacity:`${inView?1:0}`}}>
          <Typography variant={props.smdevice?"h4":"h2"} sx={{fontFamily:"Montserrat",fontWeight:"600"}}>
             Hobby
          </Typography>

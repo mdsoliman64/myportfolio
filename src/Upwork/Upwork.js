@@ -1,10 +1,11 @@
 import React ,{useState,useEffect} from 'react'
 import "./Upwork.css"
 import {Button,Typography} from "@mui/material";
+import {useInView} from "react-intersection-observer"
 
 
 function Upwork() {
-
+const [ref,inView]=useInView();
 const [mbdevice,setMbDevice]=useState(false);
 const windowSize= window.innerWidth;
 useEffect(()=>{
@@ -18,7 +19,7 @@ if(windowSize <700){
 },[windowSize])
 
   return (
-   <section id="Upwork">
+   <section id="Upwork" ref={ref} style={{transition:"all 2s ease-out",opacity:`${inView ? 1 :0}`,transform:`skewX(${inView?"0deg":"20deg"})`}} >
       <div className='Upwork-wrap'>
       <div className={mbdevice ? "Upwork-title-mb":'Upwork-title'}>
             <h1>Upwork</h1>

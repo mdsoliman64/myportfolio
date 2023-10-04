@@ -1,9 +1,11 @@
 import React from 'react'
 import "../About-us/About.css"
 import {Paper,Typography,Box} from "@mui/material"
+import { useInView } from 'react-intersection-observer';
 function About(props) {
+  const [ref,inView]=useInView();
   return (
-    <section className='About' id="About">
+    <section className='About' id="About" ref={ref} style={{transition:"all 1s ease-out",transform:`skewX(${inView?"0deg":"20deg"})`}}>
     <Paper elevation={4} className='About-item' sx={{backgroundColor:"var(--Button)",color:"#fff",marginTop:10,border:"2px solid var(--Border)",boxShadow:"inset 4px 4px 4px #000"}}>
             <Typography variant={`${props.smdevice?"h5":"h2"}`} sx={{fontFamily:"Montserrat",fontWeight:`${props.smdevice?"600":"300"}`}}>
                    About

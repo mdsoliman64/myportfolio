@@ -19,7 +19,7 @@ function prevHandle(){
 }
     return(
         <>
-            <section id="CarouselPortfolio" style={{transform:`translateX(-${mbdevice ? imageIndex * 151 : imageIndex * 80}%)`,}}>
+            <section id="CarouselPortfolio" style={{transform:`translateX(-${mbdevice ? imageIndex * 0 : imageIndex * 50}%)`,}}>
                     {Products.map((item,index)=>{
                         return(
                             <div className="CP-card" key={index}>
@@ -44,7 +44,7 @@ function prevHandle(){
 
                    
             </section>
-            <div className="CP-button-container">
+            <div className="CP-button-container" style={{opacity:`${props.mbdevice ? 0:1 }`}}>
                       
                         <button onClick={prevHandle}><ArrowLeftIcon sx={{fontSize:"2rem"}}/>  </button>
                         <button onClick={nextHandle}><ArrowRightIcon sx={{fontSize:"2rem"}} /></button>
