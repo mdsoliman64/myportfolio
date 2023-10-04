@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.73d8e609.css",
-    "main.js": "/myportfolio/static/js/main.b31ce57b.js",
+    "main.js": "/myportfolio/static/js/main.d97f9e2f.js",
     "static/media/bg.png": "/myportfolio/static/media/bg.7d7cf32f14421b1b703b.png",
     "static/media/calculator.PNG": "/myportfolio/static/media/calculator.925b629e2beb1db61dc3.PNG",
     "static/media/grammer-guru.PNG": "/myportfolio/static/media/grammer-guru.3fbd148d3284e2ed352a.PNG",
@@ -10,10 +10,10 @@
     "static/media/code-editor.PNG": "/myportfolio/static/media/code-editor.9a2b70e025a63e0dab97.PNG",
     "index.html": "/myportfolio/index.html",
     "main.73d8e609.css.map": "/myportfolio/static/css/main.73d8e609.css.map",
-    "main.b31ce57b.js.map": "/myportfolio/static/js/main.b31ce57b.js.map"
+    "main.d97f9e2f.js.map": "/myportfolio/static/js/main.d97f9e2f.js.map"
   },
   "entrypoints": [
     "static/css/main.73d8e609.css",
-    "static/js/main.b31ce57b.js"
+    "static/js/main.d97f9e2f.js"
   ]
 }
