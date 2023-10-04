@@ -12,7 +12,7 @@ import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
 function Service(props) {
         const [ref, inView] = useInView();
   return (
-   <section id="service">
+   <section id="service" ref={ref}>
    <Grid container spacing={1} className="service-item">
     <Grid item sm={12} sx={{marginBottom:5}}>
     <Paper sx={props.smdevice ?{width:"100%",padding:2,border:"2px solid var(--Button)",borderRadius:"25px"}:{width:"50%",padding:2,border:"2px solid var(--Button)",borderRadius:"25px"}}>     
@@ -21,7 +21,7 @@ function Service(props) {
                 </Typography>
         </Paper>
     </Grid>
-    <Grid item sm={12} md={4} sx={{transition:"all 1s ease-out",opacity:`${inView ? 1 :0}`}} ref={ref}>
+    <Grid item sm={12} md={4} sx={{transition:"all 1s ease-out",opacity:`${inView ? 1 :0}`}} >
             <Paper elevation={4} sx={{padding:4,backgroundColor:"#FCF0FF",width:"75%",textAlign:"justify"}}>
             <Box sx={{margin:"auto",textAlign:"center",marginBottom:2}}  >
                      <FontAwesomeIcon icon={faFigma} size="2xl" style={{border:"2px solid #000",borderRadius:"15px",padding:4,fontSize:"5rem",textAlign:"center",margin:"auto",color:"var(--Button)"}}/> 

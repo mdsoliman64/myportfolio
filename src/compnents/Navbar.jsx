@@ -25,7 +25,7 @@ function Navbar() {
          </a>
 
 
-         <a href="/">
+         <a href="#Home">
           <div className="icon">
             <SettingsIcon  sx={{fontSize:35,textAlign:"center"}}/>
           </div>
