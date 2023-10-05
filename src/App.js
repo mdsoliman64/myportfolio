@@ -47,7 +47,7 @@ return()=>{
   },[windowSize,ref])
   return (
     <Grid container spacing={0} sx={{position:"relative"}}>
-      <Grid item xs={smdevice ? 12:10} sx={{position:"relative",padding:5}}>
+      <Grid item xs={smdevice ? 10:10} sx={{position:"relative",padding:5}}>
         <Home smdevice={smdevice}/>
         <About smdevice={smdevice} />
         <Hobby smdevice={smdevice}/>
