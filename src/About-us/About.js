@@ -14,6 +14,10 @@ function About(props) {
             <Typography variant='p' sx={props.smdevice ?{fontFamily:"syne",textAlign:"justify",marginTop:3,lineHeight:1.5,wordSpacing:5,fontSize:"0.8rem"}:{fontFamily:"syne",textAlign:"justify",marginTop:5,lineHeight:1.5,wordSpacing:5,fontSize:"1.2rem"}}>
             As a skilled and passionate full stack web developer with expertise in the MERN (MongoDB, Express.js, React.js, Node.js) stack, combined with my proficiency in search engine optimization (SEO), I bring a comprehensive approach to creating exceptional web experiences. With a solid foundation in both front-end and back-end development, I have successfully delivered numerous projects, leveraging the power of modern web technologies
             </Typography>
+            <br/>
+            <Typography variant='p' sx={props.smdevice ?{fontFamily:"syne",textAlign:"justify",marginTop:3,lineHeight:1.5,wordSpacing:5,fontSize:"0.8rem"}:{fontFamily:"syne",textAlign:"justify",marginTop:5,lineHeight:1.5,wordSpacing:5,fontSize:"1.5rem"}}>
+                <a href="/certificates"> Check my all certificate </a>
+            </Typography>
             </Box>
 
             

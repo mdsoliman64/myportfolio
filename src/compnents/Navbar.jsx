@@ -12,39 +12,39 @@ function Navbar() {
   return (
     <section  className='Navbar'>
         <div className='Navbar-Menu'>
-        <a href="#Home">
+        <a href="/myportfolio">
           <div className="icon">
             <HomeRoundedIcon sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
-         <a href="#About">
+         <a href="/myportfolio/#About">
           <div className="icon">
             <PersonIcon sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
 
-         <a href="#Home">
+         <a href="/myportfolio/#Home">
           <div className="icon">
             <SettingsIcon  sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
 
-         <a href="#service">
+         <a href="/myportfolio/services">
           <div className="icon">
             <RocketLaunchIcon className="rocket-icon" sx={{fontSize:35}}/>
           </div>
          </a>
 
-         <a href="#Portfolio">
+         <a href="/myportfolio/portfolio">
           <div className="icon">
             <BusinessCenterIcon sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
-         <a href="#contact">
+         <a href="/myportfolio/#contact">
           <div className="icon">
             <PermContactCalendarIcon  sx={{fontSize:35,textAlign:"center"}}/>
           </div>

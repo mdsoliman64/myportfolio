@@ -3,7 +3,6 @@ import './App.css';
 import Home from './Home/Home';
 import {Grid} from "@mui/material"
 import Navbar from './compnents/Navbar';
-import About from './About-us/About';
 import MobileMenue from './compnents/MobileMenue';
 import Hobby from './Hobby/Hobby';
 import Service from './Service/Service';
@@ -11,6 +10,8 @@ import Portfolio from './Portfolio/Portfolio';
 import Upwork from './Upwork/Upwork';
 import Contact from './contact/Contact';
 import Features from './Feaures/Features';
+import Certificates from './Certificates/Certificates';
+import {BrowserRouter ,Route, Routes} from "react-router-dom";
 
 function App() {
   
@@ -48,11 +49,20 @@ return()=>{
   return (
     <Grid container spacing={0} sx={{position:"relative",overflow:"hidden"}}>
       <Grid item xs={smdevice ? 12:10} sx={{position:"relative",padding:5}}>
-        <Home smdevice={smdevice}/>
-        <About smdevice={smdevice} />
-        <Hobby smdevice={smdevice}/>
-        <Service  smdevice={smdevice} />
-        <Portfolio />
+
+      <BrowserRouter>
+        <Routes>
+           <Route exact path='/myportfolio/' element={<><Home smdevice={smdevice}/> <Hobby smdevice={smdevice}/></>}></Route>
+           <Route path='/myportfolio/services' element={<Service smdevice={smdevice} />}></Route>
+           <Route path='/myportfolio/portfolio' element={  <Portfolio />}></Route>
+           <Route path='/myportfolio/certificates' element={  <Certificates smdevice={smdevice} />}></Route>
+        </Routes>
+      </BrowserRouter>
+       
+     
+        
+      
+      
        
         <Features/>
         <Upwork />

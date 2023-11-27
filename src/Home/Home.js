@@ -6,6 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import title_slider from '../compnents/Slider';
+import About from '../About-us/About';
 function Home(props) {
     const [count,setCount]=useState(0);
     useEffect(()=>{
@@ -25,6 +26,7 @@ function Home(props) {
     },[count])
 
   return (
+    <>
    <section className='Home' id="Home">
         <Grid container spacing={0}>
             <Grid item xs={12} md={6} sx={{margin:"auto",textAlign:"center"}}>
@@ -61,7 +63,8 @@ function Home(props) {
             </Grid>
         </Grid>
     </section>
-  
+    <About/>
+    </>
   )
 }
 
