@@ -18,33 +18,33 @@ function Navbar() {
           </div>
          </a>
 
-         <a href="/myportfolio/#About">
+         <a href="/#About">
           <div className="icon">
             <PersonIcon sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
 
-         <a href="/myportfolio/#Home">
+         <a href="/#Home">
           <div className="icon">
             <SettingsIcon  sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
 
-         <a href="/myportfolio/services">
+         <a href="/services">
           <div className="icon">
             <RocketLaunchIcon className="rocket-icon" sx={{fontSize:35}}/>
           </div>
          </a>
 
-         <a href="/myportfolio/portfolio">
+         <a href="/portfolio">
           <div className="icon">
             <BusinessCenterIcon sx={{fontSize:35,textAlign:"center"}}/>
           </div>
          </a>
 
-         <a href="/myportfolio/#contact">
+         <a href="/#contact">
           <div className="icon">
             <PermContactCalendarIcon  sx={{fontSize:35,textAlign:"center"}}/>
           </div>

@@ -11,7 +11,7 @@ import Upwork from './Upwork/Upwork';
 import Contact from './contact/Contact';
 import Features from './Feaures/Features';
 import Certificates from './Certificates/Certificates';
-import {BrowserRouter ,Route, Routes} from "react-router-dom";
+import {HashRouter  ,Route, Routes} from "react-router-dom";
 
 function App() {
   
@@ -50,14 +50,15 @@ return()=>{
     <Grid container spacing={0} sx={{position:"relative",overflow:"hidden"}}>
       <Grid item xs={smdevice ? 12:10} sx={{position:"relative",padding:5}}>
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-           <Route exact path='/myportfolio/' element={<><Home smdevice={smdevice}/> <Hobby smdevice={smdevice}/></>}></Route>
-           <Route path='/myportfolio/services' element={<Service smdevice={smdevice} />}></Route>
-           <Route path='/myportfolio/portfolio' element={  <Portfolio />}></Route>
-           <Route path='/myportfolio/certificates' element={  <Certificates smdevice={smdevice} />}></Route>
+           <Route   path="/" exact  element={<><Home smdevice={smdevice}/> <Hobby smdevice={smdevice}/></>}></Route>
+           <Route   path="/services" elementt={<Service smdevice={smdevice} />}></Route>
+           {/* <Route   path='/myportfolio/portfolio' component={<Portfolio />}></Route> */}
+           <Route   path='/portfolio' element={Portfolio}></Route>
+           <Route   path='/certificates' element={<Certificates smdevice={smdevice} />}></Route>
         </Routes>
-      </BrowserRouter>
+        </HashRouter>
        
      
         
