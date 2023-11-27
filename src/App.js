@@ -53,9 +53,9 @@ return()=>{
       <HashRouter>
         <Routes>
            <Route   path="/" exact  element={<><Home smdevice={smdevice}/> <Hobby smdevice={smdevice}/></>}></Route>
-           <Route   path="/services" elementt={<Service smdevice={smdevice} />}></Route>
+           <Route   path="/services" element={<Service smdevice={smdevice} />}></Route>
            {/* <Route   path='/myportfolio/portfolio' component={<Portfolio />}></Route> */}
-           <Route   path='/portfolio' element={Portfolio}></Route>
+           <Route   path="/portfolio" element={<Portfolio/>}></Route>
            <Route   path='/certificates' element={<Certificates smdevice={smdevice} />}></Route>
         </Routes>
         </HashRouter>
