@@ -23,6 +23,8 @@
     width: 20px;
     z-index: -1000;
     margin-left: 5px;
+    transition: 2s;
+    animation: line 5s ease-in-out ;
   
 }
 #container{
@@ -67,4 +69,10 @@ font-size: 1.2rem;
     color: silver;
     text-align: center;
     margin-bottom: 15px;
+}
+
+@keyframes line {
+    from{ height: 0vh;}
+    to{ height: 100vh;}
+    
 }
