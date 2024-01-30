@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import title_slider from '../compnents/Slider';
-import About from '../About-us/About';
+
 function Home(props) {
     const [count,setCount]=useState(0);
     useEffect(()=>{
@@ -54,7 +54,7 @@ function Home(props) {
                         <InstagramIcon sx={{ fontSize: 40 }}/>
                     </a>
 
-                    <Button href="#Portfolio" variant='contained' className="btn" sx={{backgroundColor:"var(--Button)","&:hover":{backgroundColor:"#fff",color:"var(--Button)"}}}>
+                    <Button href="/portfolio" variant='contained' className="btn" sx={{backgroundColor:"var(--Button)","&:hover":{backgroundColor:"#fff",color:"var(--Button)"}}}>
                         My Portfolios
                     </Button>
                 </Box>
@@ -63,7 +63,7 @@ function Home(props) {
             </Grid>
         </Grid>
     </section>
-    <About/>
+  
     </>
   )
 }

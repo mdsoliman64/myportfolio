@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <section  className='Navbar'>
         <div className='Navbar-Menu'>
-        <a href="/myportfolio">
+        <a href="/">
           <div className="icon">
             <HomeRoundedIcon sx={{fontSize:35,textAlign:"center"}}/>
           </div>
@@ -25,7 +25,7 @@ function Navbar() {
          </a>
 
 
-         <a href="/#Home">
+         <a href="/certificates">
           <div className="icon">
             <SettingsIcon  sx={{fontSize:35,textAlign:"center"}}/>
           </div>

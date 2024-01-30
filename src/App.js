@@ -11,10 +11,14 @@ import Upwork from './Upwork/Upwork';
 import Contact from './contact/Contact';
 import Features from './Feaures/Features';
 import Certificates from './Certificates/Certificates';
-import {HashRouter  ,Route, Routes} from "react-router-dom";
+import About from "./About-us/About"
+import {BrowserRouter  ,Route, Routes} from "react-router-dom";
+import NewCertificates from './Certificates/NewCertificates';
+
 
 function App() {
-  
+
+
   const [smdevice,setSmdevice]=useState(false);
   const [windowSize,setWindowSize]=useState();
  
@@ -50,15 +54,18 @@ return()=>{
     <Grid container spacing={0} sx={{position:"relative",overflow:"hidden"}}>
       <Grid item xs={smdevice ? 12:10} sx={{position:"relative",padding:5}}>
 
-      <HashRouter>
+    <BrowserRouter>
         <Routes>
-           <Route   path="/" exact  element={<><Home smdevice={smdevice}/> <Hobby smdevice={smdevice}/></>}></Route>
+           <Route   path="/" exact  element={<><Home smdevice={smdevice}/>   <About smdevice={smdevice}/>  <Hobby smdevice={smdevice}/> <NewCertificates/></>}></Route>
+           <Route   path="*"   element={<><Home smdevice={smdevice}/> <About smdevice={smdevice}/> <Hobby smdevice={smdevice}/></>}></Route>
            <Route   path="/services" element={<Service smdevice={smdevice} />}></Route>
            {/* <Route   path='/myportfolio/portfolio' component={<Portfolio />}></Route> */}
            <Route   path="/portfolio" element={<Portfolio/>}></Route>
-           <Route   path='/certificates' element={<Certificates smdevice={smdevice} />}></Route>
+           {/* <Route   path='/certificates' element={<Certificates smdevice={smdevice} />}></Route> */}
+           <Route   path='/certificates' element={<NewCertificates smdevice={smdevice} />}></Route>
         </Routes>
-        </HashRouter>
+      </BrowserRouter>
+      
        
      
         
